@@ -33,7 +33,7 @@ const router = (app) => {
   app.get('/getAllNotes', mid.requiresLogin, controllers.Gallery.getAllNotes);
 
   app.get('/', mid.requiresSecure, mid.requiresLogout, controllers.Account.loginPage);
-  
+
   app.get('/*', mid.requiresLogin, controllers.Note.mainPage);
 };
 
