@@ -73,12 +73,14 @@ nav{
   padding: 10px 30px 10px 30px;
   border-left: 1px solid #d3cab6;
 }
+
 .navlink:first-child{
   border:none;
 }
-.navlink:nth-child(3){
+.navlink:nth-child(4){
   border:none;
 }
+
 #logoutNav{
   float:right;
 }
@@ -132,4 +134,21 @@ nav{
   float: right;
   right: 50;
   top: 50;
+}
+
+h1{
+  position: relative;
+  margin: 0 auto;
+  width: 250px;
+  font-weight: normal;
+  padding: 0px 30px 30px 30px;
+  border-bottom: 1px solid #999;
+}
+#paypalForm{
+  position: relative;
+  margin: 0 auto;
+  width: 250px;
+  font-weight: normal;
+  padding: 5px 30px 30px 30px;
+  border-top: 1px solid #999;
 }

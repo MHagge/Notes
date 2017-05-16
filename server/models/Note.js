@@ -43,7 +43,12 @@ const NoteSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
   },
-
+  
+//  color:{
+//    type: String,
+//    required:true,
+//  },
+  
   createdData: {
     type: Date,
     default: Date.now,

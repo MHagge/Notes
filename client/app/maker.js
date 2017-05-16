@@ -163,6 +163,14 @@ const createMainPageWindow = function(csrf){
 const setup = function(csrf){
   if(document.querySelector("#makeNote")){
     createMainPageWindow(csrf);
+
+//    var colorPicker = new ColorPicker({
+//      color: '#FF0000',
+//      background: '#454545',
+//      el: document.body,
+//      width: 200,
+//      height: 200
+//    });
   }
 };
 
@@ -176,9 +184,6 @@ const getToken = () =>{
 $(document).ready(function(){
   getToken();
 });
-
-
-
 
 
 

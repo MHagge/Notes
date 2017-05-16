@@ -11,6 +11,8 @@ const RedisStore = require('connect-redis')(session);
 const url = require('url');
 const csrf = require('csurf');
 
+//var ColorPicker = require('simple-color-picker');
+
 const PORT = process.env.PORT || process.env.NODE_PORT || 3000;
 
 const dbURL = process.env.MONGODB_URI || 'mongodb://localhost/NoteApp';
@@ -65,6 +67,7 @@ app.set('views', `${__dirname}/../views`);
 app.use(cookieParser());
 
 app.use(csrf());
+//app.use(ColorPicker);
 app.use((err, req, res, next) => {
   if (err.code !== 'EBADCSRFTOKEN') return next(err);
   console.log('Missing CSRF token');

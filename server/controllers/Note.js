@@ -43,6 +43,7 @@ const makeNote = (req, res) => {
     ownerName: req.session.account.username,
     owner: req.session.account._id,
     privateNote: req.body.private,
+    //color: req.body.color
   };
 
   const newNote = new Note.NoteModel(noteData);
